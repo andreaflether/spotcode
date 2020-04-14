@@ -157,7 +157,7 @@ lizzo = Artist.find_or_create_by(name: "Lizzo")
 lizzo.photo.attach(io: File.open("#{tmp_dir}/seed_files/lizzo.jpg"), filename: "lizzo.jpg")
  
 cuz_i_love_you = lizzo.albums.create_with(date: Time.strptime("17/04/2019", "%d/%m/%Y"), category: rb)
-                             .find_or_create_by(title: "Neon Bible")
+                             .find_or_create_by(title: "Cuz I Love You")
 cuz_i_love_you.cover.attach(io: File.open("#{tmp_dir}/seed_files/cuz_i_love_you.png"), filename: "cuz_i_love_you.png")
  
 cily = cuz_i_love_you.songs.create_with(plays_count: Random.rand(1000))
