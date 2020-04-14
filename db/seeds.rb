@@ -95,7 +95,7 @@ womans_world.file.attach(io: File.open("#{tmp_dir}/seed_files/songs/womans_world
 dua_lipa = Artist.create(name: "Dua Lipa")
 dua_lipa.photo.attach(io: File.open("#{tmp_dir}/seed_files/dua_lipa.jpg"), filename: "dua_lipa.jpg")
  
-future_nostalgia = little_mix.albums.create(title: "LM5 (Deluxe)", date: Time.strptime("27/03/2020", "%d/%m/%Y"), category: world)
+future_nostalgia = dua_lipa.albums.create(title: "Future Nostalgia", date: Time.strptime("27/03/2020", "%d/%m/%Y"), category: world)
 future_nostalgia.cover.attach(io: File.open("#{tmp_dir}/seed_files/future_nostalgia.png"), filename: "future_nostalgia.png")
  
 boys_will_be_boys = future_nostalgia.songs.create(title: "Boys Will Be Boys", plays_count: Random.rand(1000))
