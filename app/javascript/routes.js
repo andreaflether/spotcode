@@ -16,3 +16,5 @@ const Routes = (props) => (
     <Route exact path='/favorites' component={FavoritesScreen} />
   </Switch>
 );
+
+export default Routes;
