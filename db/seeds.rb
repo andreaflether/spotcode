@@ -236,12 +236,12 @@ the_man.file.attach(io: File.open("#{tmp_dir}/seed_files/songs/the_man.mp3"), fi
  
 andreaflether = User.create_with(name: "Andréa Alencar", password: "123456", password_confirmation: "123456")
                     .find_or_create_by(email: "andrea@flether.com")
-andreaflether.favorites.find_or_create_by(favoritable: dona_de_mim)
-andreaflether.favorites.find_or_create_by(favoritable: lm5)
-andreaflether.favorites.find_or_create_by(favoritable: future_nostalgia)
-andreaflether.recently_played.find_or_create_by(album: dona_de_mim)
-andreaflether.recently_played.find_or_create_by(album: future_nostalgia)
-andreaflether.recently_played.find_or_create_by(album: lm5)
+andreaflether.favorites.create(favoritable: dona_de_mim)
+andreaflether.favorites.create(favoritable: lm5)
+andreaflether.favorites.create(favoritable: future_nostalgia)
+andreaflether.recently_played.create(album: dona_de_mim)
+andreaflether.recently_played.create(album: future_nostalgia)
+andreaflether.recently_played.create(album: lm5)
  
 diana_ross = User.create_with(name: "Diana Ross", password: "123456", password_confirmation: "123456")
                  .find_or_create_by(email: "diana@ross.com")
