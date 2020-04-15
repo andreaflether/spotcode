@@ -24,5 +24,7 @@ Rails.application.routes.draw do
         concerns :favoritable, favoritable_type: 'Song'
       end 
     end 
-  end 
+  end
+  
+  get "*path", to: "home#index", :constraints => lambda{|req| req.path !~ /\.(png|jpg|js|css|json)$/ } 	
 end

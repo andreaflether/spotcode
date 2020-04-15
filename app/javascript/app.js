@@ -3,10 +3,15 @@ import 'react-bulma-components/dist/react-bulma-components.min.css';
 import { Button } from 'react-bulma-components';
 import 'app.scss';
 
+import Routes from './routes';
+import { BrowserRouter } from 'react-router-dom';
+
 const App = () => {
   return (
     <Fragment>
-      <Button color="success">Testando o Bulma</Button>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
     </Fragment>
   )
 }
