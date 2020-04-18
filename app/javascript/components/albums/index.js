@@ -3,6 +3,8 @@ import { Heading, Columns, Image } from 'react-bulma-components';
 import styled from 'styled-components';
 import AlbumService from '../../services/albums';
 import { useParams } from 'react-router-dom';
+import Songs from '../songs';
+
 
 const DivSpaced = styled.div`
  margin-top: 20px;
@@ -33,6 +35,7 @@ const Albums = () => {
           </DivSpaced>
         </Columns.Column>
       </Columns>
+      <Songs songs={album.songs || []}/>
     </Fragment>
   );
 }
