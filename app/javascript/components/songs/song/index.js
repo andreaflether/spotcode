@@ -26,7 +26,7 @@ const Song = (props) => {
        <Columns.Column desktop={{ size: 1 }} mobile={{ size: 2 }} >
          {PlayingButton}
        </Columns.Column>
-       <Columns.Column desktop={{ size: 4 }} mobile={{ size: 8 }}>
+       <Columns.Column desktop={{ size: 5 }} mobile={{ size: 8 }}>
          <Columns className='is-vcentered is-mobile'>
            <Columns.Column desktop={{ size: 8 }} mobile={{ size: 8 }}>
              <Heading size={5} className='has-text-white'>

@@ -8,7 +8,7 @@ import Songs from '../songs';
 
 const DivSpaced = styled.div`
  margin-top: 20px;
- margin-bottom: 20px;
+ margin-bottom: 0px;
 `
 
 const Albums = () => {
@@ -34,8 +34,11 @@ const Albums = () => {
             <Heading size={6} subtitle className='has-text-white'>{album.artist_name}</Heading>
           </DivSpaced>
         </Columns.Column>
+        <Columns.Column desktop={{size: 12}}>
+        
+        </Columns.Column>
       </Columns>
-      <Songs songs={album.songs || []}/>
+     <Songs songs={album.songs || []}/>
     </Fragment>
   );
 }
